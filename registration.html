@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Jose Meza
+    Assignment: CS336 Assignment #5
+    Created: 11/6/2017
+    Description: Template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Jose Meza">
+    <meta name="robots" content=" ">
+    <title>Registration</title>
+</head>
+
+
+<body style="background-color:lightgreen;">
+
+
+<header>
+    <h1>
+
+        Video Game Conference
+
+    </h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="awards.html">Awards</a> |
+        <a href="activities.html">Activities</a> |
+        <a href="keynote.html">Keynote</a> |
+        <a href="registration.html">Registration</a> |
+        <a href="meals.html">Meals</a> |
+        <a href="workshopschedule.html">Workshop Schedule</a>
+        <link href="webdefault.css" rel="stylesheet"/>
+
+
+    </nav>
+
+</header>
+
+<main>
+
+    <body>
+    <h1>Registration</h1>
+    </body>
+    <form action="thankyou.html" method="get post" action = "createCookies">
+
+        <fieldset style="width: 60%">
+            <legend>Personal Information</legend>
+            <div id="demo" class="collapse in">
+                <label> First Name:
+                    <input type="text" name="first_name" id="first_name" required placeholder="First Name" size="20"
+                           pattern="([a-zA-Z])+">
+                </label>
+                <label> Last Name:
+                    <input type="text" name="last_name" id="last_name" required placeholder="Last Name" size="20"
+                           pattern="([a-zA-Z])+">
+
+                </label>
+                <label> Salutation
+                    <select>
+                        <option></option>
+                        <option>Mr.
+                        <option>Mrs.
+                        <option>Ms.
+
+                    </select>
+
+
+                </label><br>
+                <label>Address Line 1</label>
+                <input type="text" name="address_1" id="adress_1" required placeholder="Address" size="90"
+                       pattern="([a-zA-Z])+"> <br>
+                <label>Address Line 2</label>
+                <input type="text" name="address_2" id="adress_2" required placeholder="Address" size="90"
+                       pattern="[a-zA-Z0-9\ \#]+"> <br>
+                <label>City</label>
+                <input type="text" name="city" id="city" required placeholder="City" size="30"
+                       pattern="[a-zA-Z0-9\ \#]+">
+                <label> State
+                    <select>
+                        <option></option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </label>-
+                <label>Zip Code</label>
+                <input type="text" name="zip_code" id="zip_Code" required placeholder="Zip Code" size="10"
+                       pattern="[0-9]{5}\-[0-9]{4}"> <br>
+                <label>Telephone:</label>
+                <input type="text" name="telephone" id="telephone" required placeholder="Telephone" size="13"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label> Email:</label><input type="text" name="email" id="email" required placeholder="Email" size="30"
+                                             pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Zaz]{2,4})">
+
+                <br>
+
+
+            </div>
+
+        </fieldset>
+
+        <fieldset style="width: 60%">
+            <legend>Company Information</legend>
+            <div>
+                <label> Company name </label> <input type="url" name="company" id="company" placeholder="Company"
+                                                     Size="30" required pattern="[a-zA-Z0-9\ \#]+">
+                <label> Company Website </label> <input type="url" name="website" id="website" placeholder="Website Url"
+                                                        Size="30"><br>
+                <label>Position in Company</label><input type="position" name="position" id="position"
+                                                         placeholder="Position in Company" required>
+                <br>
+
+                <button type="button">Previous</button>
+                <button type="button">Next</button>
+            </div>
+        </fieldset>
+        <fieldset style="width: 60%">
+            <legend>Dining Information</legend>
+            <div>
+                <label>Would you want the Full Meal Package?</label> <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label> Yes </label><input type="radio" name="meal" id="yesmeal"
+                                                                              required>
+                <label>No</label><input type="radio" name="meal" id="nomeal" required><br>
+                <label>Would you want to purchase the meal for day 2?</label><br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label> Yes </label><input type="radio" name="meal" id="yesmeal2"
+                                                                              required>
+
+                <label>No</label><input type="radio" name="meal" id="nomeal2" required>
+                <br>
+
+                <button type="button">Previous</button>
+                <button type="button">Next</button>
+            </div>
+        </fieldset>
+        <fieldset style="width: 60%">
+            <legend>Workshops</legend>
+            <div>
+                <table style="width: 100%">
+                    <tr>
+                        <th>Session 1</th>
+                        <th>Session 2</th>
+                        <th>Session 3</th>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="wsa" name="session1"> History? And past Virtual Reality games</td>
+                        <td><input type="radio" id="wsd" name="session2"> Mobile virtual reality games</td>
+                        <td><input type="radio" id="wsg" name="session3"> Future of Virtual Reality Games</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="wsb" name="session1"> Xbox Future Console</td>
+                        <td><input type="radio" id="wse" name="session2"> Playstation Future Console</td>
+                        <td><input type="radio" id="wsh" name="session3"> Nintendo Future Console</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="wsc" name="session1"> Nintendo Games</td>
+                        <td><input type="radio" id="wsf" name="session2"> Valve Corporation Game</td>
+                        <td><input type="radio" id="wsi" name="session3"> Activision Blizzard Game</td>
+                    </tr>
+
+
+                </table>
+                <br>
+
+                <button type="button">Previous</button>
+                <button type="button">Next</button>
+            </div>
+
+        </fieldset>
+
+        <fieldset style="width: 60%">
+
+            <legend>Billing</legend>
+            <div>
+                <label> Billing First Name
+                    <input type="text" name="Bfirst_name" id="Bfirst_name" required placeholder="First Name" size="20"
+                           pattern="([a-zA-Z])+">
+                </label>
+                <label> Billing Last Name
+                    <input type="text" name="Blast_name" id="Blast_name" required placeholder="Last Name" size="20"
+                           pattern="([a-zA-Z])+">
+
+
+                </label><br>
+                <label>Card Type</label> <br>
+                <label>Visa</label><input type="radio" id="visa" required name="card">
+                <label>American Express</label><input type="radio" id="AmericanExpress" required name="card">
+                <label>Master Card</label><input type="radio" id="MasterCard" required name="card"><br>
+
+                <label>Card Number</label><input type="text" id="cardNum" required name="cardNum" pattern="[0-9]{16}">
+                <label>Security Code</label><input type="text" id="SecCode" required name="SecCode" pattern="[0-9]{4}"
+                                                   size="5">
+                <label>Expiration Month and Year</label> <input type="text" id="ExpMonth" required name="ExpMonth"
+                                                                pattern=
+                                                                        "(0[1-9]|1[0-2])" size="2"><label> - </label>
+                <input type="text" id="ExpYear" name="ExpYear" required pattern="[2][0]([1-2][6-9])" size="4">
+                <br>
+
+                <button type="button">Previous</button>
+                <button type="button">Next</button><br>
+                <input type="submit" value="submit" onclick="return validateForm()">
+
+
+            </div>
+        </fieldset>
+
+
+
+    </form>
+</main>
+<footer>
+    <address>
+        <small>
+            Jose Meza<br>
+            3212 W ave,<br>
+            Denver Co, 290129<br>
+            Jmeza@hotgreen.com<br>
+
+
+        </small>
+
+    </address>
+
+</footer>
+</body>
+</html>
+
+<script>
+    function validateForm() {
+        var wsa = document.getElementById("wsa").checked;
+        var wsb = document.getElementById("wsb").checked;
+        var wsc = document.getElementById("wsc").checked;
+        var wsd = document.getElementById("wsd").checked;
+        var wse = document.getElementById("wse").checked;
+        var wsf = document.getElementById("wsf").checked;
+        var wsg = document.getElementById("wsg").checked;
+        var wsh = document.getElementById("wsh").checked;
+        var wsi = document.getElementById("wsi").checked;
+        var errorMsg = "";
+
+        if (wsb) {
+            if (wsd || wse || wsf) {
+
+                errorMsg = "the Xbox Future console workshop does not allow you to pick a workshop in session 2."
+
+            }
+        }
+
+        if (wsf) {
+            if (wsg || wsi) {
+                if (errorMsg === "") {
+                    errorMsg = "You must chose the Nintendo Future Console workshop" +
+                        " if you chose the Valve Corporation Game ";
+                }
+                else {
+                    errorMsg += " Also, you must chose the Nintendo Future Console workshop" +
+                        "if you chose the Valve Corporation Game ";
+                }
+            }
+
+        }
+
+        if (wsh) {
+            if (wsd || wse) {
+                if (errorMsg === "") {
+                    errorMsg = "If you would like to take the the Nintendo Future Console workshop you must " +
+                        "choose the Valve Corporation Game workshop "
+                }
+                else {
+                    errorMsg += "Also, If You would like to take the the Nintendo Future Console workshop you must " +
+                        "choose the Valve Corporation Game workshop "
+                }
+
+            }
+        }
+
+        if (wsb) {
+            if (wsh) {
+                if (errorMsg === "") {
+                    errorMsg = "You must chose the Nintendo Future Console workshop" +
+                        " if you chose the Valve Corporation Game ";
+                }
+                else {
+                    errorMsg += " Also, you must chose the Nintendo Future Console workshop" +
+                        "if you chose the Valve Corporation Game ";
+                }
+            }
+        }
+
+
+        if (errorMsg !== "") {
+            displayErrorMsg(errorMsg);
+            return false;
+        }
+
+
+    }
+
+    function createCookies() {
+
+            document.cookie = "First Name =" + document.getElementById("firstName").value;
+            document.cookie = "Last Name =" + document.getElementById("LastName").value;
+            document.cookie = "Email =" + document.getElementById("Email").value;
+            document.cookie = "Registration ID =" + document.getElementById("RegID").value;
+
+
+
+
+
+    }
+
+
+
+    function displayErrorMsg(errorMessage) {
+        localStorage.setItem("error", errorMessage);
+
+        var x = (screen.availWidth - 500) / 2;
+        var y = (screen.availHeight - 400) / 2;
+
+        window.open('error.html', '_blank', 'width=500px,height=400, left =' + x + ',top=' + y);
+
+
+    }
+</script>
